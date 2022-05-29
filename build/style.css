@@ -1,0 +1,175 @@
+body{
+    margin: 0;
+    background-color: rgb(63, 2, 99);
+    font-family: Texto;
+}
+
+@font-face{
+    font-family: Texto;
+    src: url("ArlonSemiBold.ttf");
+}
+
+#fondowhite{
+    width: 100%;
+    height: 100vh;
+    background-position:center;
+    display: flex;
+    position:absolute;
+}
+
+video{
+    position: absolute;
+    display: flex;
+    mix-blend-mode: screen;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+#fondologo{
+    
+    width: 100%;
+    height: 100vh;
+    filter: blur(20px);
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    position: absolute;
+}
+
+#fondoblack{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.877);
+    position: absolute;
+}
+
+#fondonoise{
+    width: 100%;
+    height: 100vh;
+    background-image: url(noise.png);
+    opacity: 0.15;
+    position:absolute;
+}
+
+#contenido{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+}
+
+#contenido2{
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    margin-top: 0;
+    display: flex;
+    background-position-x: 50%;
+}
+
+#contenido3{
+    width: 700px;
+    height: 90vh;
+    margin: auto;
+    background-size: contain;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#banner{
+    width: 200px;
+    height: 25%;
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+    border-bottom-width: thick;
+}
+
+#bannerlogo{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    transform: scale(80%);
+    background-size: contain;
+}
+
+#linkssection{
+    width: 100%;
+    height: 73vh;
+    overflow-y: auto;
+}
+
+#botones{
+    width: 98.5%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.541);
+    margin: auto;
+    border-radius:10px;
+    margin-right:10px;
+    display:flex;
+    transition:all 0.1s;
+}
+
+#linkbox{
+    width: 100%;
+    height: 100px;
+    border-radius:10px;
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    
+}
+
+#separador{
+    width: 100%;
+    height:10px;
+}
+
+#plataformslogobox{
+    width: 70px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.514);
+    margin: auto;
+    margin-left: 10px;
+    display: flex;
+    border-radius: 5px;
+    transition:all 0.1s;
+}
+
+#plataformslogo{
+    width: 100%;
+    background-size: contain;
+    filter: invert(1);
+    margin: auto;    
+}
+
+#textsocials{
+    color: white;
+    margin: auto;
+    margin-left: -10%;
+    text-decoration: none;
+    transition:all 0.1s;
+}
+
+.imagen{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+#plataformslogobox:hover ,#botones:hover{
+    transition:0.15s cubic-bezier(0.175, 0.885, 0.32, 2.275);
+    border-radius: 30px;
+    transform: scale(93%);
+}
+
+#textsocials:hover{
+    transform: scale(130%);
+    transition:0.2s cubic-bezier(0.175, 0.885, 0.32, 2.275);
+}
