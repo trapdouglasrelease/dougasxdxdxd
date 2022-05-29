@@ -37,7 +37,6 @@ video{
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60%;
-    filter: blur(20px);
     position: absolute;
 }
 
